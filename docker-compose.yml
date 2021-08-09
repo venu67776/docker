@@ -21,6 +21,8 @@ services:
   todo:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/todo:0.0.1
     container_name: todo
+    ports:
+    - "8080:8080"
     depends_on:
     - redis
   redis:
