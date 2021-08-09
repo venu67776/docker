@@ -7,7 +7,7 @@ services:
     - "80:80"
     depends_on:
     - users
-    -login
+    - login
   users:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/login:0.0.1
     container_name: users
