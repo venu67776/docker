@@ -9,7 +9,7 @@ services:
     - users
     - login
   users:
-    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/users:0.0.4
+    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/users:0.0.5
     container_name: users
   login:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/login:0.0.8
