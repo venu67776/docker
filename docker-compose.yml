@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   frontend:
-    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/frontend:0.0.15
+    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/frontend:0.0.16
     container_name: frontend
     ports:
     - "8080:8080"
@@ -12,7 +12,7 @@ services:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/users:0.0.5
     container_name: users
   login:
-    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/login:0.0.9
+    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/login:0.0.10
     container_name: login
     depends_on:
     - users
