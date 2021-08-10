@@ -9,7 +9,7 @@ services:
     - users
     - login
   users:
-    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/users:0.0.3
+    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/users:0.0.4
     container_name: users
   login:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/login:0.0.8
@@ -17,7 +17,7 @@ services:
     depends_on:
     - users
     environment:
-      USERS_API_ADDRESS: "users:80"
+      USERS_API_ADDRESS: "users:8080"
   todo:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/todo:0.0.2
     container_name: todo
