@@ -17,7 +17,7 @@ services:
     depends_on:
     - users
     environment:
-      USERS_API_ADDRESS: "users:8080"
+      USERS_API_ADDRESS: "users:80"
   todo:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/todo:0.0.2
     container_name: todo
