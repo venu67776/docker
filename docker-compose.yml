@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   frontend:
-    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/frontend:0.0.17
+    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/frontend:0.0.20
     container_name: frontend
     ports:
     - "80:80"
