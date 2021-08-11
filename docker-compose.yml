@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   frontend:
-    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/frontend:0.0.16
+    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/frontend:0.0.17
     container_name: frontend
     ports:
     - "8080:8080"
@@ -9,17 +9,17 @@ services:
     - users
     - login
   users:
-    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/users:0.0.5
+    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/users:0.0.6
     container_name: users
   login:
-    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/login:0.0.10
+    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/login:0.0.11
     container_name: login
     depends_on:
     - users
     environment:
       USERS_API_ADDRESS: "users:8080"
   todo:
-    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/todo:0.0.2
+    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/todo:0.0.3
     container_name: todo
     depends_on:
     - redis
