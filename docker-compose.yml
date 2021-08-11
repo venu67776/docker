@@ -4,7 +4,7 @@ services:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/frontend:0.0.17
     container_name: frontend
     ports:
-    - "8080:8080"
+    - "80:80"
     depends_on:
     - users
     - login
