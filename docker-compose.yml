@@ -12,7 +12,7 @@ services:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/users:0.0.1
     container_name: users
   login:
-    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/login:0.0.1
+    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/login:0.0.11
     container_name: login
     depends_on:
     - users
