@@ -14,8 +14,6 @@ services:
   login:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/login:0.0.11
     container_name: login
-    ports:
-    - "8080:80"
     depends_on:
     - users
     environment:
@@ -23,8 +21,6 @@ services:
   todo:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/todo:0.0.3
     container_name: todo 
-    ports:
-    - "8080:80"
     depends_on:
     - redis
   redis:
