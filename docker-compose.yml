@@ -19,7 +19,7 @@ services:
     environment:
       USERS_API_ADDRESS: "users"
   todo:
-    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/todo:0.0.1
+    image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/todo:0.0.3
     container_name: todo 
     depends_on:
     - redis
