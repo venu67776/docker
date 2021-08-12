@@ -11,6 +11,8 @@ services:
   users:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/users:0.0.1
     container_name: users
+    ports:
+    - "8081:8080"
   login:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/login:0.0.11
     container_name: login
@@ -19,7 +21,7 @@ services:
     depends_on:
     - users
     environment:
-      USERS_API_ADDRESS: "users:80"
+      USERS_API_ADDRESS: "users:8080"
   todo:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/todo:0.0.3
     container_name: todo 
