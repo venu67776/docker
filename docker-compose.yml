@@ -19,7 +19,6 @@ services:
     - users
     environment:
       USERS_API_ADDRESS: "users:8080"
-      AUTH_API_PORT: "8080"
   todo:
     image: 488617992296.dkr.ecr.us-east-1.amazonaws.com/todo:0.0.3
     container_name: todo 
